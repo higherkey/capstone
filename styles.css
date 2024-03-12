@@ -1,0 +1,161 @@
+/* Import the font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap');
+
+/* Reset some default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+  background-image: url("src/green-background.jpg");
+  background-repeat: repeat;
+  background-size: 700px;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  border-radius: 10px;
+  display: flex; /* Make the body a flex container */
+  min-height: 100vh; /* Set the minimum height to viewport height */
+  flex-direction: column; /* Stack content vertically */
+}
+
+main {
+  flex: 1; /* Allow main to fill remaining space */
+}
+
+/* Header and Navigation */
+header {
+  background: linear-gradient(to right, #31585e, #333);
+  color: #fff;
+  padding: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+h1 {
+  padding: 20px;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+}
+
+#logo {
+  width: 25px;
+  height: 25px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: inherit;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Media Query for screen width less than 530px */
+@media (max-width: 530px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul {
+    margin-top: 10px;
+  }
+}
+
+/* Hero Section */
+.hero {
+  background-color: #81ffeae7;
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+/* Game Grid */
+.game-grid {
+  padding: 0 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+  gap: 20px;
+  max-width: 100%;
+}
+
+.grid-flex-container {
+  display: flex;
+  justify-content: center;
+}
+
+.game-tile {
+  background-color: #9ae7ab;
+  padding: 20px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+  width: 275px;
+  margin: 0 auto; 
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.game-tile:hover {
+  background-color: #72b683;
+  cursor: pointer;
+}
+
+.game-tile img {
+  max-width: 100%;
+  height: auto;
+}
+
+.game-tile h3 {
+  margin-top: 10px;
+  color: inherit;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+footer a {
+  font-size: small;
+  color: inherit;
+}
