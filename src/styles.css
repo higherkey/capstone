@@ -10,7 +10,7 @@
 }
 
 body {
-  background-image: url("src/green-background.jpg");
+  background-image: url("media/green-background.jpg");
   background-repeat: repeat;
   background-size: 700px;
   font-family: Arial, sans-serif;
