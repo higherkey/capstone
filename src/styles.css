@@ -72,6 +72,9 @@ nav ul li {
 nav ul li a {
   color: #fff;
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Media Query for screen width less than 530px */
@@ -158,4 +161,15 @@ footer {
 footer a {
   font-size: small;
   color: inherit;
+}
+
+/* Flex styles */
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
 }

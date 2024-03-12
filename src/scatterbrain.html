@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Boggle - OurTable</title>
+    <title>Scatterbrain - OurTable</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="game-style.css" />
   </head>
@@ -11,7 +11,7 @@
     <header>
       <nav>
         <div>
-          <img id="logo" src="src/table-logo.png" alt="" />
+          <img id="logo" src="media/table-logo.png" alt="" />
           <a href="index.html" class="logo">OurTable</a>
         </div>
         <ul>
@@ -25,12 +25,48 @@
     </header>
 
     <main>
-      <!-- <section class="hero">
-      <h1>Play tabletop games online</h1>
-      <p>Experience the joy of board games in a new way.</p>
-    </section> -->
-      <h1>Boggle</h1>
-      <section id="game">Game</section>
+      <h1>Scatterbrain</h1>
+
+      <section id="game" class="flex-column">
+
+        <div id="top-row" class="flex-row">
+          <button id="pick-letter">Pick a Letter</button>
+          <div id="chosen-letter">_</div>
+        </div>
+
+        <div id="main-section" class="flex-row">
+          <ul class="categories" class="flex-column">
+            <li>Animal</li>
+            <li>Food</li>
+            <li>Occupation</li>
+            <li>Place</li>
+            <li>Thing</li>
+            <li>Brand</li>
+            <li>Movie</li>
+            <li>Book</li>
+            <li>Song</li>
+            <li>TV Show</li>
+            <li>Sport</li>
+            <li>Hobby</li>
+          </ul>
+
+          <div class="answer-boxes" class="flex-column">
+            <input type="text" placeholder="Animal" />
+            <input type="text" placeholder="Food" />
+            <input type="text" placeholder="Occupation" />
+            <input type="text" placeholder="Place" />
+            <input type="text" placeholder="Thing" />
+            <input type="text" placeholder="Brand" />
+            <input type="text" placeholder="Movie" />
+            <input type="text" placeholder="Book" />
+            <input type="text" placeholder="Song" />
+            <input type="text" placeholder="TV Show" />
+            <input type="text" placeholder="Sport" />
+            <input type="text" placeholder="Hobby" />
+          </div>
+        </div>
+      </section>
+
     </main>
 
     <footer>
@@ -41,5 +77,6 @@
     </footer>
 
     <script src="main.js"></script>
+    <script src="scatterbrain.js"></script>
   </body>
 </html>
