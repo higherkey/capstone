@@ -12,7 +12,7 @@
       <nav>
         <div>
           <img id="logo" src="media/table-logo.png" alt="" />
-          <a href="index.html" class="logo">OurTable</a>
+          <a href="../index.html" class="logo">OurTable</a>
         </div>
         <ul>
           <li><a href="#">Home</a></li>
@@ -30,7 +30,56 @@
       <p>Experience the joy of board games in a new way.</p>
     </section> -->
       <h1>Boggle</h1>
-      <section id="game">Game</section>
+
+      <section id="game" class="flex-column">
+        <div id="top-row" class="flex-row">
+
+          <div id="word-entry" class="flex-column">
+            <label id="word-entry-label" for="word-entry-textbox">Enter Word</label>
+            <input id="word-entry-textbox" name="word-textbox" type="text" placeholder="word">
+          </div>
+          <button id="submit">Submit Word</button>
+        </div>
+
+        <div id="buttons" class="flex-row">
+          <button id="start-game">Start Game</button>
+          <button id="clear-board" hidden="true">Clear Board</button>
+        </div>
+        
+        <div id="timer">03:00</div>
+
+        <div id="main-section" class="flex-row">
+          <div class="side-panel" class="flex-column">
+            <h3>Correct Words</h3>
+            <ul id="correct-words">
+              <li>First</li>
+              <li>Second</li>
+            </ul>
+          </div>
+        
+
+        <div class="board">
+          <div class="dice"></div>
+          <div class="dice"></div>
+          <div class="dice"></div>
+          <div class="dice"></div>
+          <div class="dice"></div>
+          <div class="dice"></div>
+          <div class="dice"></div>
+          <div class="dice"></div>
+          <div class="dice"></div>
+          <div class="dice"></div>
+          <div class="dice"></div>
+          <div class="dice"></div>
+          <div class="dice"></div>
+          <div class="dice"></div>
+          <div class="dice"></div>
+          <div class="dice"></div>
+          </div>
+
+        </div>
+
+      </section>
     </main>
 
     <footer>
@@ -41,5 +90,6 @@
     </footer>
 
     <script src="main.js"></script>
+    <script src="boggle.js"></script>
   </body>
 </html>

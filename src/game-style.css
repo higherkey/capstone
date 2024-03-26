@@ -27,6 +27,8 @@ button {
   max-width: 50vw;
 }
 
+/* Scattergories */
+
 #chosen-letter {
   font-size: 24px;
   font-weight: bold;
@@ -40,14 +42,14 @@ button {
   justify-content: center;
 }
 
-.categories {
+.left-column {
   list-style: none;
   padding: 0;
   margin: 0;
   flex-wrap: wrap;
 }
 
-.categories li {
+.left-column li {
   margin-right: 20px;
   padding: 5px 10px;
   border: 1px solid #ddd;
@@ -65,4 +67,69 @@ button {
   border: 1px solid #ddd;
   border-radius: 5px;
   width: 100%;
+}
+
+/* Boggle */
+.board {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+}
+
+.dice {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 24px;
+  text-align: center;
+  line-height: 50px; /* Center text vertically */
+  cursor: pointer; /* Makes dice clickable */
+}
+
+.dice:hover {
+  background-color: #72b683;
+  cursor: pointer;
+}
+
+#start-game {
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#timer {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.side-panel {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.side-panel h3 {
+  margin-bottom: 10px;
+}
+
+#correct-words {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#timer {
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+
+  border: 1px solid black;
+  height: 30px;
+}
+
+#word-entry-textbox {
+  height: 30px;
 }
