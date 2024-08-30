@@ -8,20 +8,20 @@ Boilerplate README, to be customized and changed:
 
 # Roadmap
 ### POC
-#### POC 0.1
+#### POC 0.0.1
 - Step 1: Merge Scatterbrain code into an existing example room from colyseus-examples
 - Step 2: Make server roll the letter die and run timer that displays for all users
-#### POC 0.2:
+#### POC 0.0.2:
 - Game functionality: Show user lists
 - Game functionality: Let users score points 
 - Game functionality: Additional rounds
 - Connectivity: Room codes
-#### POC 0.3:
+#### POC 0.0.3:
 - Main screen showing game board/table and personal devices showing player zone (i.e. player hand/board)
 - Home page to join or create room
 
 ### MVP
-#### MVP 1.0:
+#### MVP 0.1.0:
 - Game functionality: Let users challenge and vote on answers
 
 # Standard Readme
